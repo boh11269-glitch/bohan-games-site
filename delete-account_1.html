@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アカウントとデータの削除リクエスト | ボーハンの冒険</title>
+<style>
+  :root {
+    --text: #1f2328;
+    --muted: #57606a;
+    --border: #d0d7de;
+    --accent: #0969da;
+    --warn-bg: #fff8c5;
+    --warn-border: #d4a72c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 80px;
+    background: #ffffff;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                 "Noto Sans JP", "Yu Gothic UI", Meiryo, sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 {
+    font-size: 26px;
+    line-height: 1.4;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 19px;
+    margin-top: 40px;
+    padding-left: 10px;
+    border-left: 4px solid var(--text);
+  }
+  h3 {
+    font-size: 16px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+  }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+  .cta {
+    display: block;
+    margin: 28px 0;
+    padding: 24px;
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    background: #f0f6ff;
+  }
+  .cta h2 {
+    margin: 0 0 12px;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+  }
+  .cta a.button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 14px 28px;
+    background: var(--accent);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .note {
+    margin: 24px 0;
+    padding: 16px 20px;
+    background: var(--warn-bg);
+    border-left: 4px solid var(--warn-border);
+    border-radius: 4px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #f6f8fa; white-space: nowrap; }
+  ol, ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  code {
+    background: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  @media (max-width: 600px) {
+    body { padding: 20px 14px 60px; font-size: 15px; }
+    h1 { font-size: 21px; }
+    h2 { font-size: 17px; }
+    .cta { padding: 18px; }
+    table { font-size: 13px; }
+    th, td { padding: 8px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>アカウントとデータの削除リクエスト</h1>
+<p class="meta">
+  対象アプリ: <strong>ボーハンの冒険</strong>（パッケージ名: com.bohan.bohanadventure）<br>
+  デベロッパー名: BOHAN<br>
+  最終更新日: 2026年10月18日
+</p>
+
+<p>
+  「ボーハンの冒険」がクラウド上に保存しているデータの削除をリクエストできます。
+  クラウド上のデータには、次の<strong>2種類</strong>があります。
+  このほか、アプリ内で「記録を送る」を押した場合に限り、<a href="#bug-log">不具合の記録</a>が保存されます。
+</p>
+
+<table>
+  <tr><th>種類</th><th>いつ作られるか</th><th>ひもづく情報</th></tr>
+  <tr>
+    <td><strong>A: データ引き継ぎ</strong></td>
+    <td>アプリ内で「引き継ぎIDを発行」を押したときだけ</td>
+    <td>アプリが発行する引き継ぎID・パスワード<br>（Googleアカウントとは無関係）</td>
+  </tr>
+  <tr>
+    <td><strong>B: クラウドバックアップ</strong></td>
+    <td>自動保存がオンのあいだ、遊んでいる間に自動で</td>
+    <td>Google Play Games のアカウント</td>
+  </tr>
+</table>
+
+<div class="note">
+  <strong>アプリ内から、その場で削除できます（メールより早く確実です）</strong><br><br>
+  <strong>A: データ引き継ぎ</strong> → アプリの「設定」→「アカウントの削除」<br>
+  <strong>B: クラウドバックアップ</strong> → アプリの「設定」→「クラウドバックアップ」→「クラウドから削除」<br><br>
+  Bは、その端末で Google Play Games にサインインしていれば本人確認が済んでいるため、
+  引き継ぎIDやパスワードの入力は必要ありません。
+  削除すると、自動保存も同時にオフになります。
+</div>
+
+<div class="cta">
+  <h2>メールで削除をリクエストする</h2>
+  <p>アプリをすでに削除してしまった場合など、アプリ内から操作できないときは、こちらをご利用ください。メールアプリが開かない場合は、<code>support@bohan-games.com</code> 宛に直接ご連絡ください。</p>
+  <a class="button" href="mailto:support@bohan-games.com?subject=%E3%80%90%E3%83%9C%E3%83%BC%E3%83%8F%E3%83%B3%E3%81%AE%E5%86%92%E9%99%BA%E3%80%91%E3%83%87%E3%83%BC%E3%82%BF%E5%89%8A%E9%99%A4%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88&amp;body=%E4%BB%A5%E4%B8%8B%E3%82%92%E3%81%94%E8%A8%98%E5%85%A5%E3%81%AE%E3%81%86%E3%81%88%E9%80%81%E4%BF%A1%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%0A%0A%E3%80%901%E3%80%91%E5%89%8A%E9%99%A4%E3%82%92%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E5%AF%BE%E8%B1%A1%EF%BC%88%E3%81%82%E3%81%A6%E3%81%AF%E3%81%BE%E3%82%8B%E3%82%82%E3%81%AE%E3%82%92%E6%AE%8B%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%EF%BC%89%0A%E3%80%80A%EF%BC%9A%E3%83%87%E3%83%BC%E3%82%BF%E5%BC%95%E3%81%8D%E7%B6%99%E3%81%8E%E7%94%A8%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A8%E3%80%81%E3%81%9D%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E4%B8%8A%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%0A%E3%80%80B%EF%BC%9A%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97%EF%BC%88Google%20Play%20Games%20%E3%81%A8%E9%80%A3%E6%90%BA%E3%81%97%E3%81%A6%E8%87%AA%E5%8B%95%E4%BF%9D%E5%AD%98%E3%81%95%E3%82%8C%E3%81%9F%E3%82%82%E3%81%AE%EF%BC%89%0A%E3%80%80C%EF%BC%9AA%E3%81%A8B%E3%81%AE%E4%B8%A1%E6%96%B9%0A%0A%E3%80%902%E3%80%91%E6%9C%AC%E4%BA%BA%E7%A2%BA%E8%AA%8D%E3%81%AE%E6%83%85%E5%A0%B1%0A%E3%80%80A%E3%82%92%E5%90%AB%E3%82%80%E5%A0%B4%E5%90%88%EF%BC%9A%E5%BC%95%E3%81%8D%E7%B6%99%E3%81%8EID%EF%BC%88%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E3%80%8C%E8%A8%AD%E5%AE%9A%E3%80%8D%E2%86%92%E3%80%8C%E3%83%87%E3%83%BC%E3%82%BF%E5%BC%95%E3%81%8D%E7%B6%99%E3%81%8E%E3%80%8D%E3%81%A7%E7%99%BA%E8%A1%8C%E3%81%97%E3%81%9F%E6%96%87%E5%AD%97%E5%88%97%EF%BC%89%0A%E3%80%80B%E3%82%92%E5%90%AB%E3%82%80%E5%A0%B4%E5%90%88%EF%BC%9A%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%20Google%20Play%20Games%20%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%EF%BC%88%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%EF%BC%89%0A%0A%E3%80%903%E3%80%91%E3%81%94%E9%80%A3%E7%B5%A1%E5%85%88%EF%BC%88%E3%81%93%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%81%AE%E9%80%81%E4%BF%A1%E5%85%83%E3%81%A8%E7%95%B0%E3%81%AA%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E3%81%BF%EF%BC%89%0A%0A">メールで削除をリクエストする</a>
+</div>
+
+<h2>リクエストに必要な情報</h2>
+
+<p>本人確認のため、メールには以下をご記入ください。</p>
+
+<ol>
+  <li><strong>削除を希望する対象</strong>（A / B / 両方）</li>
+  <li>
+    <strong>本人確認の情報</strong>
+    <ul>
+      <li><strong>A（データ引き継ぎ）</strong>… 引き継ぎID（アプリの「設定」→「データ引き継ぎ」で発行した文字列）</li>
+      <li><strong>B（クラウドバックアップ）</strong>… ゲームで使用している Google Play Games のアカウント（メールアドレス）</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>削除される範囲</h2>
+
+<h3>A: データ引き継ぎ</h3>
+
+<table>
+  <tr><th>選択</th><th>削除されるもの</th></tr>
+  <tr>
+    <td><strong>アカウントと関連データをすべて削除</strong></td>
+    <td>引き継ぎ用アカウント（ユーザー名・パスワード）、およびクラウド上に保存されたゲーム進行データのすべて</td>
+  </tr>
+  <tr>
+    <td><strong>引き継ぎデータのみ削除</strong></td>
+    <td>クラウド上のゲーム進行データのみ。アカウントは残り、再度引き継ぎデータを発行できます</td>
+  </tr>
+</table>
+
+<h3>B: クラウドバックアップ</h3>
+
+<p>次のすべてが削除され、あわせて自動保存がオフになります。</p>
+
+<table>
+  <tr><th>削除されるもの</th><th>内容</th></tr>
+  <tr>
+    <td><strong>バックアップ本体（最大3世代）</strong></td>
+    <td>ゲーム進行データ（レベル、所持アイテム、装備、ペット、図鑑、実績、到達ステージ、ゲーム内通貨、購入済みアイテムの所持状態、音量などの各種設定）</td>
+  </tr>
+  <tr>
+    <td><strong>管理用の索引</strong></td>
+    <td>どの世代がいつ保存されたかの記録</td>
+  </tr>
+  <tr>
+    <td><strong>隔離された控え</strong></td>
+    <td>データの異常が疑われたときに、既存の世代を守るため別枠へ退避した控え（作られない場合もあります）</td>
+  </tr>
+</table>
+
+<h2>保持期間について</h2>
+
+<ul>
+  <li><strong>クラウドバックアップ</strong>は、削除されるまで保持されます。期間による自動削除は行いません。<br>
+      ただし保存できる世代は最大3つで、新しい保存が加わると<strong>いちばん古い世代から順に上書き</strong>されます。</li>
+  <li><strong>データ引き継ぎ</strong>のデータは、新しく発行し直すか削除するまで保持されます。</li>
+  <li>メールでの削除リクエストは、受領から <strong>30日以内</strong> に完了し、完了時にご連絡します。
+      本人確認のため追加のご質問をさせていただく場合があります。</li>
+  <li>アプリ内から削除した場合は、その場で完了します。</li>
+</ul>
+
+<h2>自動保存をオフにした場合</h2>
+
+<p>
+  アプリの「設定」→「クラウドバックアップ」から自動保存をオフにすると、
+  それ以降はクラウドへ送られなくなります。
+  ただし<strong>すでにクラウドにある控えは残ります</strong>。
+  消す場合は、同じ画面の「クラウドから削除」をお使いください。
+</p>
+
+<h2 id="bug-log">不具合の記録の削除</h2>
+
+<p>
+  アプリの「設定」→「クラウドバックアップ」→「記録を送る」を押した場合に限り、
+  端末の動作の記録が保存されます（1人につき最新の1件のみ・送り直すと上書き）。
+  この記録は、同じ画面の「クラウドから削除」を押すと、クラウドの控えと一緒に削除されます。
+</p>
+
+<p>
+  アプリから操作できない場合は、<code>support@bohan-games.com</code> 宛に、件名を「不具合の記録の削除」として、
+  ゲームで使用している<strong>Google Play Games のアカウント（メールアドレス）</strong>を添えてご連絡ください。
+  受領から <strong>30日以内</strong> に削除し、完了時にご連絡します。
+</p>
+
+<h2>削除されないもの</h2>
+
+<ul>
+  <li><strong>端末内のセーブデータ</strong> — アプリをアンインストールすることでご自身で削除できます。クラウド側を削除しても、遊んでいるデータはそのまま残ります。</li>
+  <li><strong>Google Play の購入履歴</strong> — Google が管理しており、当方では削除できません。Google Play ヘルプをご確認ください。</li>
+  <li><strong>Google Play Games のアカウントそのもの</strong> — Google が管理しています。当方が削除するのは、そのアカウントにひもづけて当方が保存したバックアップだけです。</li>
+  <li><strong>広告配信に関連して Google AdMob が取得した情報</strong> — Google が管理しています。端末の「設定」→「Google」→「広告」から広告IDの削除やパーソナライズの停止を行えます。</li>
+</ul>
+
+<h2>データの保持について</h2>
+
+<p>当方は、法令上の義務がある場合を除き、削除後にデータを保持しません。当方はゲームアプリの提供のみを行っており、法令により保持が義務付けられる種類のデータは取り扱っていません。</p>
+
+<h2>関連ページ</h2>
+
+<ul>
+  <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+
+<footer>
+  ボーハンの冒険 — アカウントとデータの削除リクエスト<br>
+  デベロッパー名: BOHAN / 連絡先: support@bohan-games.com
+</footer>
+
+</main>
+</body>
+</html>
